@@ -25,7 +25,7 @@ Auto-héberger un **wiki personnel** pour organiser mes connaissances et documen
 - **Traefik** → Reverse proxy pour l’accès sécurisé  
 - **Docker** → Conteneurisation du service  
 
-📂 [Détails sur mon Wiki](prokets/wiki.md)  
+📂 [Détails sur mon Wiki](03-prokets/01-wiki.md)  
 
 ---
 
@@ -41,7 +41,7 @@ Auto-héberger un **site web personnel** pour partager des articles et des resso
 - **Traefik** → Reverse proxy et gestion SSL  
 - **Docker** → Conteneurisation du service  
 
-📂 [Détails sur mon Site Web](prokets/site-web.md)  
+📂 [Détails sur mon Site Web](03-prokets/02-site-web.md)  
 
 ---
 
@@ -60,7 +60,7 @@ Auto-héberger une **bibliothèque multimédia** pour gérer et accéder à mes 
 - **qBittorrent** → Téléchargement  
 - **Docker** → Conteneurisation  
 
-📂 [Détails sur mon Media Stack](projets/media-stack.md)
+📂 [Détails sur mon Media Stack](03-prokets/03-media-stack.md)
 
 ---
 
@@ -75,6 +75,6 @@ Auto-héberger un **outil de qualimétrie** pour analyser la qualité de mon cod
 - **Traefik** → Reverse proxy et gestion SSL  
 - **Docker** → Conteneurisation  
 
-📂 [Détails sur mon Logiciel de qualimétrie](prokets/qualimetrie.md)  
+📂 [Détails sur mon Logiciel de qualimétrie](03-prokets/04-qualimetrie.md)  
 
 ---

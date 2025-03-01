@@ -24,7 +24,8 @@ Mon infrastructure repose sur plusieurs outils open-source pour la gestion et l'
 - **🔎 Jellyseerr** → Gestion des demandes d'ajout de contenu  
 - **🎞️ Radarr & Sonarr** → Organisation des films et séries  
 - **🔍 Prowlarr** → Agrégateur d'indexeurs  
-- **🕵️‍♂️ Flaresolverr** → Contournement des protections Cloudflare  
+- **🕵️‍♂️ Flaresolverr** → Contournement des protections Cloudflare 
+- **🦉 Joal** → Simulateur d'envoi sur les sites de partage
 - **🌀 qBittorrent** → Téléchargement des contenus  
 - **🐳 Docker** → Conteneurisation des services    
 
@@ -51,6 +52,11 @@ mkdir -p ~/media-stack && cd ~/media-stack
 ```
 3. Créer un fichier `docker-compose.yml`
 
+4. Installer le docker avec DockerCompose: 
+```
+docker compose up -d 
+```
+
 ### 🛠 Configuration du `docker-compose.yml`
 ```yml
 name: media-stack
@@ -68,7 +74,7 @@ services:
 
   qbittorrent:
     container_name: qbittorrent
-    image: lscr.io/linuxserver/qbittorrent:5.0.3
+    image: lscr.io/linuxserver/qbittorrent:4.6.0
     networks:
       - media-stack-net
     environment:
@@ -78,7 +84,7 @@ services:
       - WEBUI_PORT=5080
     volumes:
       - ./config/qbittorrent-config:/config
-      - ./torrent-downloads:/downloads
+      - /media-stack:/downloads
     ports:
       - 5080:5080
       - 6881:6881
@@ -98,7 +104,7 @@ services:
       - 7878:7878
     volumes:
       - ./config/radarr-config:/config
-      - ./torrent-downloads:/downloads
+      - /media-stack:/downloads
     restart: unless-stopped
 
   sonarr:
@@ -112,14 +118,14 @@ services:
       - TZ=UTC
     volumes:
       - ./config/sonarr-config:/config
-      - ./torrent-downloads:/downloads
+      - /media-stack:/downloads
     ports:
       - 8989:8989
     restart: unless-stopped
 
   prowlarr:
     container_name: prowlarr
-    image: linuxserver/prowlarr:1.30.2
+    image: linuxserver/prowlarr:1.31.2
     networks:
       - media-stack-net
     environment:
@@ -133,14 +139,29 @@ services:
     restart: unless-stopped
 
   flaresolverr:
-    image: ghcr.io/flaresolverr/flaresolverr:latest
+    image: alexfozor/flaresolverr:pr-1300-experimental
     container_name: flaresolverr
     networks:
       - media-stack-net
     environment:
-      - LOG_LEVEL=info
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - LOG_HTML=${LOG_HTML:-false}
+      - CAPTCHA_SOLVER=${CAPTCHA_SOLVER:-none}
+      - TZ=Europe/London
     ports:
       - 8191:8191
+    restart: unless-stopped
+
+  joal:
+    image: anthonyraymond/joal:latest
+    container_name: joal
+    networks:
+      - media-stack-net
+    volumes:
+      - ./config/joal-config:/data
+    ports:
+      - 8080:80
+    command: ["--joal-conf=/data", "--spring.main.web-environment=true", "--server.port=80", "--joal.ui.path.prefix=joal", "--joal.ui.secret-token=6i56kkJztnjC2W"]
     restart: unless-stopped
 
   jellyseerr:
@@ -171,13 +192,14 @@ services:
       - TZ=UTC
     volumes:
       - ./config/jellyfin-config:/config
-      - ./torrent-downloads:/data
+      - /media-stack:/data
     ports:
       - 8096:8096
       - 7359:7359/udp
       - 8920:8920
     restart: unless-stopped
 ```
+
 ### 🎭 Configuration des services
 #### 🌀 Configure qBittorrent
 
@@ -192,7 +214,7 @@ chown 1000:1000 /downloads/movies /downloads/tvshows
 
 #### 🎞️ Configure Radarr & Sonarr
 
-- Ouvrez Radarr at http://localhost:7878
+- Ouvrez Radarr sur http://localhost:7878
 - **Settings --> Media Management --> Check mark "Movies deleted from disk are automatically unmonitored in Radarr"** sous  **File management section --> Save**
 - **Settings --> Media Management --> Scroll to bottom --> Add Root Folder --> Browse to /downloads/movies --> OK**
 - **Settings --> Download clients --> qBittorrent --> Add Host (qbittorrent) and port (5080) --> Username and password --> Test --> Save **
@@ -209,12 +231,19 @@ La configuration de Sonarr (port 8989) est similaire.
 
 #### 🔍 Configure Prowlarr
 
-- Ouvrez Prowlarr à http://localhost:9696
+- Ouvrez Prowlarr sur http://localhost:9696
 - **Settings --> General --> Authentications → Ajouter identifiants**
-- Ajouter des indexeurs, **Indexers --> Add Indexer --> Search for indexer --> Choose base URL --> Test and Save**
-- Associer Radarr **Settings --> Apps --> Add application --> Choose Radarr --> Prowlarr server (http://prowlarr:9696) --> Radarr server (http://radarr:7878) --> API Key --> Test and Save**
-- Associer Sonarr **Settings --> Apps --> Add application --> Choose Sonarr --> Prowlarr server (http://prowlarr:9696) --> Sonarr server (http://sonarr:8989) --> API Key --> Test and Save**
+- Ajoutez des indexeurs, **Indexers --> Add Indexer --> Search for indexer --> Choose base URL --> Test et Save**
+- Associez Radarr **Settings --> Apps --> Add application --> Choose Radarr --> Prowlarr server (http://prowlarr:9696) --> Radarr server (http://radarr:7878) --> API Key --> Test et Save**
+- Associez Sonarr **Settings --> Apps --> Add application --> Choose Sonarr --> Prowlarr server (http://prowlarr:9696) --> Sonarr server (http://sonarr:8989) --> API Key --> Test et Save**
 - L'indexation sera automatiquement configurée pour Radarr et Sonarr
+- Ajoutez FlaareSolverr **Settings --> indexers --> FlareSolver --> Tags: flaresolver | Host : http://flaresolverr:8191 --> Test et Save** (Le tag sera a ajouter a tout les Indexers qui necessite un resolver de Captcha)
+
+#### 🦉 Configure Joal 
+
+- Ajoutez un fichier `.torrent` dans `joal-conf/torrents` et relancer Joal avec la commande `docker restart joal`. 
+- Ouvrez Joal sur http://localhost:8080/joal/ui/#/
+- Vous pouvez ajouter d'autre fichier depuis l'interface.
 
 #### 📺 Configure Jellyfin
 
