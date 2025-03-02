@@ -2,7 +2,7 @@
 title: Projets
 description: 
 published: 1
-date: 2025-02-16T22:53:40.948Z
+date: 2025-03-02T21:57:44.727Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-15T11:44:10.419Z

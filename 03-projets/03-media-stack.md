@@ -2,10 +2,10 @@
 title: Media Stack
 description: 
 published: 1
-date: 2025-02-16T22:54:10.075Z
+date: 2025-03-02T21:57:48.004Z
 tags: 
 editor: markdown
-dateCreated: 2025-02-15T11:42:36.048Z
+dateCreated: 2025-03-01T19:31:47.611Z
 ---
 
 # 🎬 Media Stack : Jellyfin  

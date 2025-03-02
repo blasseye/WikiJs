@@ -2,7 +2,7 @@
 title: Developpement
 description: 
 published: 1
-date: 2025-02-20T19:11:54.605Z
+date: 2025-03-02T21:57:43.129Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-20T19:11:52.512Z
