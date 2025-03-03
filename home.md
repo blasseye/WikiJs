@@ -2,7 +2,7 @@
 title: Bienvenue
 description: 
 published: 1
-date: 2025-03-02T21:57:46.313Z
+date: 2025-03-03T16:35:36.951Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-15T08:45:14.019Z
@@ -59,7 +59,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 - 🖥 **Matériel** : Serveur dédié 
 - 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
 
-📂 [Détails sur mon Wiki](03-projets/wiki.md)
+📂 [Détails sur mon Wiki](03-projets/01-wiki.md)
 
 ### 🚀 Site Web : Wordpress  
 - 📌 **Objectif** : Auto-héberger mon site web
@@ -67,7 +67,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 - 🖥 **Matériel** : Serveur dédié 
 - 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
 
-📂 [Détails sur mon Site Web](03-projets/site-web.md)
+📂 [Détails sur mon Site Web](03-projets/02-site-web.md)
 
 ### 🎬 Media Stack : Jellyfin  
 - 📌 **Objectif** : Auto-héberger une bibliothèque multimédia  
@@ -75,7 +75,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 - 🖥 **Matériel** : Serveur dédié 
 - 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
 
-📂 [Détails sur mon Media Stack](03-projets/media-stack.md)
+📂 [Détails sur mon Media Stack](03-projets/03-media-stack.md)
 
 ### 📊 Logiciel de qualimétrie : SonarQube  
 - 📌 **Objectif** : Auto-héberger mon logiciel de qualimétrie
@@ -83,7 +83,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 - 🖥 **Matériel** : Serveur dédié 
 - 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
 
-📂 [Détails sur mon Logiciel de qualimétrie](03-projets/qualimetrie.md)
+📂 [Détails sur mon Logiciel de qualimétrie](03-projets/04-qualimetrie.md)
 
 📂 [Tous mes projets](03-projets.md)
 
