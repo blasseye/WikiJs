@@ -1,3 +1,13 @@
+---
+title: Information
+description: 
+published: 1
+date: 2025-03-03T19:27:08.031Z
+tags: 
+editor: markdown
+dateCreated: 2025-03-03T16:53:38.166Z
+---
+
 ﻿<h1 align="center">📖 WikiJs (WORK IN PROGRESS)</h1>
 <p align="center">
 Bienvenue dans le dépôt de mon <b>WikiJs</b> ! 🚀
