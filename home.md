@@ -2,7 +2,7 @@
 title: Bienvenue
 description: 
 published: 1
-date: 2025-03-03T16:35:36.951Z
+date: 2025-03-03T17:06:24.546Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-15T08:45:14.019Z
@@ -34,6 +34,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 
 - 📌 **Cloud** : OpenStack  
 - 🔧 **Serveurs** : Debian
+- 🔀 **Reverse Proxy** : Nginx 
 - 🚀 **Monitoring** : Grafana, Prometheus  
 - 🔐 **Sécurité** : Firewall, VPN (WireGuard)  
 
