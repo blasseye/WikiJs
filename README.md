@@ -28,5 +28,5 @@ Ce wiki est principalement destiné à un usage personnel, mais si tu veux propo
 ---
 📩 **Contact** : contact@blasseye.fr
 
-🌐 **Lient** : [wiki.blasseye.fr](https://wiki.blasseye.fr)
+🌐 **Lien** : [wiki.blasseye.fr](https://wiki.blasseye.fr)
 
