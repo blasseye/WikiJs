@@ -2,14 +2,14 @@
 title: Bienvenue
 description: 
 published: 1
-date: 2025-03-03T19:54:20.972Z
+date: 2025-03-31T16:49:44.343Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-15T08:45:14.019Z
 ---
 
 <p align="center">
-  <img src="https://wiki.blasseye.fr/icon/logo.png" alt="Logo du Wiki" />
+  <img width="200" height="200" src="https://wiki.blasseye.fr/icon/logo.png" alt="Logo du Wiki" />
 </p>
 
 # 🌐 Mon Wiki Personnel
