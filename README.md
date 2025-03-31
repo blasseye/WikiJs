@@ -2,7 +2,7 @@
 title: Information
 description: 
 published: 1
-date: 2025-03-03T19:27:08.031Z
+date: 2025-03-31T18:55:13.080Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-03T16:53:38.166Z
@@ -13,7 +13,7 @@ dateCreated: 2025-03-03T16:53:38.166Z
 Bienvenue dans le dépôt de mon <b>WikiJs</b> ! 🚀
 </p>
 <p align="center">
-  <img src="icon/logo.png" alt="Logo du Wiki" />
+  <img width="200" height="200" src="icon/logo.png" alt="Logo du Wiki" />
 </p>
 
 
