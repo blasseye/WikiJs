@@ -2,7 +2,7 @@
 title: Media Stack
 description: 
 published: 1
-date: 2025-03-02T21:57:48.004Z
+date: 2025-04-10T19:32:29.406Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-01T19:31:47.611Z
@@ -67,7 +67,7 @@ networks:
     ipam:
       config:
         - subnet: 172.20.0.0/16
-  reverse-proxy:
+  traefik_net:
     external: true
 
 services:
@@ -93,7 +93,7 @@ services:
 
   radarr:
     container_name: radarr
-    image: lscr.io/linuxserver/radarr:5.18.4
+    image: lscr.io/linuxserver/radarr:latest
     networks:
       - media-stack-net
     environment:
@@ -108,7 +108,7 @@ services:
     restart: unless-stopped
 
   sonarr:
-    image: linuxserver/sonarr:4.0.13
+    image: linuxserver/sonarr:latest
     container_name: sonarr
     networks:
       - media-stack-net
@@ -125,7 +125,7 @@ services:
 
   prowlarr:
     container_name: prowlarr
-    image: linuxserver/prowlarr:1.31.2
+    image: linuxserver/prowlarr:latest
     networks:
       - media-stack-net
     environment:
@@ -160,16 +160,16 @@ services:
     volumes:
       - ./config/joal-config:/data
     ports:
-      - 8080:80
+      - 8081:80
     command: ["--joal-conf=/data", "--spring.main.web-environment=true", "--server.port=80", "--joal.ui.path.prefix=joal", "--joal.ui.secret-token=6i56kkJztnjC2W"]
     restart: unless-stopped
 
   jellyseerr:
-    image: fallenbagel/jellyseerr:2.3.0
+    image: fallenbagel/jellyseerr:latest
     container_name: jellyseerr
     networks:
       - media-stack-net
-      - reverse-proxy
+      - traefik_net
     environment:
       - PUID=1000
       - PGID=1000
@@ -179,13 +179,19 @@ services:
     ports:
       - 5055:5055
     restart: unless-stopped
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.jellyseerr.rule: "Host(`$JELLYSERR_URL.fr`)"
+      traefik.http.routers.jellyseerr.entrypoints: "web"
+      traefik.http.services.jellyseerr.loadbalancer.server.port: "5055"
+      traefik.docker.network: "traefik_net"
 
   jellyfin:
-    image: linuxserver/jellyfin:10.10.5
+    image: linuxserver/jellyfin:latest
     container_name: jellyfin
     networks:
       - media-stack-net
-      - reverse-proxy
+      - traefik_net
     environment:
       - PUID=1000
       - PGID=1000
@@ -198,6 +204,12 @@ services:
       - 7359:7359/udp
       - 8920:8920
     restart: unless-stopped
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.jellyfin.rule: "Host(`$JELLYFIN_URL`)"
+      traefik.http.routers.jellyfin.entrypoints: "web"
+      traefik.http.services.jellyfin.loadbalancer.server.port: "8096"
+      traefik.docker.network: "traefik_net"
 ```
 
 ### 🎭 Configuration des services
