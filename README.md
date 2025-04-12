@@ -2,39 +2,105 @@
 title: Information
 description: 
 published: 1
-date: 2025-03-31T18:55:13.080Z
+date: 2025-04-12T11:42:58.725Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-03T16:53:38.166Z
 ---
 
-﻿<h1 align="center">📖 WikiJs (WORK IN PROGRESS)</h1>
 <p align="center">
-Bienvenue dans le dépôt de mon <b>WikiJs</b> ! 🚀
-</p>
-<p align="center">
-  <img width="200" height="200" src="icon/logo.png" alt="Logo du Wiki" />
+  <img width="200" height="200" src="https://wiki.blasseye.fr/icon/logo.png" alt="Logo du Wiki" />
 </p>
 
+# 🌐 Mon Wiki Personnel
 
-## 📌 Description
-Ce wiki est une base de connaissances personnelle que j'auto-héberge afin de centraliser et organiser diverses informations techniques et personnelles. Il est conçu pour être accessible, structuré et facilement extensible.
+Bienvenue sur mon wiki ! Ici, je centralise mes connaissances, notes et ressources utiles.  
 
-## 🛠️ Technologies Utilisées
-- **Moteur de Wiki** : WikiJs
-- **Base de Données** : PostgreSQL
-- **Hébergement** : Serveur personnel / Docker
+---
 
-## 📂 Contenu
-Le wiki couvre plusieurs sujets, notamment :
-- 🖥️ **Administration Système & DevOps** (Linux, Docker, Kubernetes, etc.)
-- 🔧 **Développement & Scripting** (Python, Bash, Ansible...)
-- 🌐 **Infrastructure Réseau & Sécurité**
-- 📚 **Notes & Tutoriels** sur divers outils
+## 📖 Table des matières
 
-## 📝 Contribuer
-Ce wiki est principalement destiné à un usage personnel, mais si tu veux proposer des améliorations, n'hésite pas à ouvrir une issue ou un pull request !
+- [Présentation](#presentation)
+- [Infrastructure](#infrastructure)
+- [Développement](#developpement)
+- [Projets Personnels](#projets-personnels)
+- [Notes diverses](#notes-diverses)
 
+---
+
+## 📌 Présentation <a name="presentation"></a>
+
+Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
+
+---
+
+## 🏗 Infrastructure <a name="infrastructure"></a>
+
+- 📌 **Cloud** : OpenStack  
+- 🔧 **Serveurs** : Debian
+- 🔀 **Reverse Proxy** : Nginx 
+- 🚀 **Monitoring** : Grafana, Prometheus  
+- 🔐 **Sécurité** : Firewall, VPN (WireGuard)  
+
+📂 [Détails sur mon infra](01-infrastructure.md)
+
+---
+
+## 💻 Développement <a name="developpement"></a>
+
+- 🐍 **Python** : Scripting, développement de plugins
+- 📜 **Bash** : Scripting pour l'administration
+- 📦 **Conteneurisation** : Docker
+
+📂 [Mes scripts & application](02-developpement.md)
+
+---
+
+## 🔧 Projets Personnels <a name="projets-personnels"></a>
+
+### 📚 Wiki : WikiJs  
+- 📌 **Objectif** : Auto-héberger mon wiki
+- ⚙ **Technos utilisées** : 
+- 🖥 **Matériel** : Serveur dédié 
+- 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
+
+📂 [Détails sur mon Wiki](03-projets/01-wiki.md)
+
+### 🚀 Site Web : Wordpress  
+- 📌 **Objectif** : Auto-héberger mon site web
+- ⚙ **Technos utilisées** :
+- 🖥 **Matériel** : Serveur dédié 
+- 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
+
+📂 [Détails sur mon Site Web](03-projets/02-site-web.md)
+
+### 🎬 Media Stack : Jellyfin  
+- 📌 **Objectif** : Auto-héberger une bibliothèque multimédia  
+- ⚙ **Technos utilisées** : Jellyfin, Jellyseerr, Radarr, Solarr, Prowlarr,Flaresolverr, qBittorrent, Docker
+- 🖥 **Matériel** : Serveur dédié 
+- 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
+
+📂 [Détails sur mon Media Stack](03-projets/03-media-stack.md)
+
+### 📊 Logiciel de qualimétrie : SonarQube  
+- 📌 **Objectif** : Auto-héberger mon logiciel de qualimétrie
+- ⚙ **Technos utilisées** : 
+- 🖥 **Matériel** : Serveur dédié 
+- 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
+
+📂 [Détails sur mon Logiciel de qualimétrie](03-projets/04-qualimetrie.md)
+
+📂 [Tous mes projets](03-projets.md)
+
+---
+
+## 📝 Notes diverses <a name="notes-diverses"></a>
+
+Des astuces, configurations et documentations annexes.
+
+📂 [Voir toutes mes notes](notes.md)
+
+---
 ---
 📩 **Contact** : contact@blasseye.fr
 
