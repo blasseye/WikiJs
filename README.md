@@ -2,7 +2,7 @@
 title: Information
 description: 
 published: 1
-date: 2025-04-12T11:42:58.725Z
+date: 2025-04-12T11:43:08.132Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-03T16:53:38.166Z
@@ -100,7 +100,6 @@ Des astuces, configurations et documentations annexes.
 
 📂 [Voir toutes mes notes](notes.md)
 
----
 ---
 📩 **Contact** : contact@blasseye.fr
 
