@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: true
-date: 2025-05-02T20:58:37.318Z
+date: 2025-05-02T20:59:14.155Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -18,6 +18,9 @@ Bienvenue sur mon wiki ! Ici, je centralise mes connaissances, notes et ressourc
 
 ---
 
+[TOC]
+
+---
 ## 📖 Table des matières
 
 - [Présentation](#presentation)
@@ -43,16 +46,6 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 - 🔐 **Sécurité** : VPN (WireGuard), SSO (Authelia)
 
 📂 [Détails sur mon infra](01-infrastructure.md)
-
----
-
-## 💻 Développement <a name="developpement"></a>
-
-- 🐍 **Python** : Scripting, développement de plugins
-- 📜 **Bash** : Scripting pour l'administration
-- 📦 **Conteneurisation** : Docker
-
-📂 [Mes scripts & application](02-developpement.md)
 
 ---
 
