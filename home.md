@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: true
-date: 2025-05-02T20:59:54.074Z
+date: 2025-05-02T21:00:24.790Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -15,15 +15,6 @@ dateCreated: 2025-05-02T20:54:00.983Z
 # 🌐 Mon Wiki Personnel
 
 Bienvenue sur mon wiki ! Ici, je centralise mes connaissances, notes et ressources utiles.  
-
----
----
-## 📖 Table des matières
-
-- [Présentation](#presentation)
-- [Infrastructure](#infrastructure)
-- [Projets Personnels](#projets-personnels)
-- [Notes diverses](#notes-diverses)
 
 ---
 
