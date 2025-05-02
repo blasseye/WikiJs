@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: true
-date: 2025-05-02T20:59:14.155Z
+date: 2025-05-02T20:59:54.074Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -17,15 +17,11 @@ dateCreated: 2025-05-02T20:54:00.983Z
 Bienvenue sur mon wiki ! Ici, je centralise mes connaissances, notes et ressources utiles.  
 
 ---
-
-[TOC]
-
 ---
 ## 📖 Table des matières
 
 - [Présentation](#presentation)
 - [Infrastructure](#infrastructure)
-- [Développement](#developpement)
 - [Projets Personnels](#projets-personnels)
 - [Notes diverses](#notes-diverses)
 
