@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: true
-date: 2025-05-02T20:56:04.108Z
+date: 2025-05-02T20:58:31.067Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -36,11 +36,11 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 
 ## 🏗 Infrastructure <a name="infrastructure"></a>
 
-- 📌 **Cloud** : OpenStack  
+- 📌 **Cloud** : OpenStack
 - 🔧 **Serveurs** : Debian
-- 🔀 **Reverse Proxy** : Nginx 
-- 🚀 **Monitoring** : Grafana, Prometheus  
-- 🔐 **Sécurité** : Firewall, VPN (WireGuard)  
+- 🔀 **Reverse Proxy** : Nginx
+- 🚀 **Monitoring** : Grafana, Prometheus, Portainer, WUD
+- 🔐 **Sécurité** : VPN (WireGuard), SSO (Authelia)
 
 📂 [Détails sur mon infra](01-infrastructure.md)
 
