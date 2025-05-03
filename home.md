@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2025-05-03T07:25:00.047Z
+date: 2025-05-03T07:25:29.377Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -54,7 +54,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 
 📂 [Détails sur mon Site Web](applications/wordpress.md)
 
-### 🎬 Plexit : Jellyfin
+### 🎬 Médiathèque : Jellyfin
 - 📌 **Objectif** : Auto-héberger une bibliothèque multimédia  
 - ⚙ **Technos utilisées** : Jellyfin, Jellyseerr, Radarr, Solarr, Prowlarr,Flaresolverr, qBittorrent, Docker
 - 🖥 **Matériel** : Serveur dédié 
