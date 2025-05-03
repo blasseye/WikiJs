@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2025-05-03T07:25:56.124Z
+date: 2025-05-03T07:26:33.223Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -32,11 +32,11 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 - 🚀 **Monitoring** : Grafana, Prometheus, Portainer, WUD
 - 🔐 **Sécurité** : VPN (WireGuard), SSO (Authelia)
 
-📂 [Détails sur mon infra](01-infrastructure.md)
+📂 [Détails sur mon infra](infrastructure.md)
 
 ---
 
-## 🔧 Applications auto-hebergés <a name="applications"></a>
+## 🔧 Applications auto-hebergées <a name="applications"></a>
 
 ### 📚 Wiki : WikiJs  
 - 📌 **Objectif** : Auto-héberger mon wiki
