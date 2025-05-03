@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2025-05-03T07:25:43.813Z
+date: 2025-05-03T07:25:56.124Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -36,7 +36,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 
 ---
 
-## 🔧 Applications autohebergés <a name="applications"></a>
+## 🔧 Applications auto-hebergés <a name="applications"></a>
 
 ### 📚 Wiki : WikiJs  
 - 📌 **Objectif** : Auto-héberger mon wiki
