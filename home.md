@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2025-05-03T07:20:15.400Z
+date: 2025-05-03T07:24:27.883Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -36,7 +36,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 
 ---
 
-## 🔧 Applications autohebergés <a name="Applications"></a>
+## 🔧 Applications autohebergés <a name="applications"></a>
 
 ### 📚 Wiki : WikiJs  
 - 📌 **Objectif** : Auto-héberger mon wiki
@@ -44,7 +44,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 - 🖥 **Matériel** : Serveur dédié 
 - 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
 
-📂 [Détails sur mon Wiki](03-projets/01-wiki.md)
+📂 [Détails sur mon Wiki](applications/wikijs.md)
 
 ### 🚀 Site Web : Wordpress  
 - 📌 **Objectif** : Auto-héberger mon site web
@@ -52,15 +52,15 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 - 🖥 **Matériel** : Serveur dédié 
 - 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
 
-📂 [Détails sur mon Site Web](03-projets/02-site-web.md)
+📂 [Détails sur mon Site Web](applications/02-site-web.md)
 
-### 🎬 Media Stack : Jellyfin  
+### 🎬 Plexit : Jellyfin
 - 📌 **Objectif** : Auto-héberger une bibliothèque multimédia  
 - ⚙ **Technos utilisées** : Jellyfin, Jellyseerr, Radarr, Solarr, Prowlarr,Flaresolverr, qBittorrent, Docker
 - 🖥 **Matériel** : Serveur dédié 
 - 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
 
-📂 [Détails sur mon Media Stack](03-projets/03-media-stack.md)
+📂 [Détails sur mon Media Stack](applications/plexit.md)
 
 ### 📊 Logiciel de qualimétrie : SonarQube  
 - 📌 **Objectif** : Auto-héberger mon logiciel de qualimétrie
@@ -68,7 +68,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 - 🖥 **Matériel** : Serveur dédié 
 - 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
 
-📂 [Détails sur mon Logiciel de qualimétrie](03-projets/04-qualimetrie.md)
+📂 [Détails sur mon Logiciel de qualimétrie](applications/04-qualimetrie.md)
 
 📂 [Tous mes projets](03-projets.md)
 
