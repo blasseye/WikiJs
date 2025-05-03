@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2025-05-03T07:25:29.377Z
+date: 2025-05-03T07:25:43.813Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -70,7 +70,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 
 📂 [Détails sur mon Logiciel de qualimétrie](applications/sonarQube.md)
 
-📂 [Tous mes projets](03-projets.md)
+📂 [Tous mes projets](applications.md)
 
 ---
 
