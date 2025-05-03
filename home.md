@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2025-05-03T07:30:56.086Z
+date: 2025-05-03T07:31:00.874Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -60,7 +60,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 - 🖥 **Matériel** : Serveur dédié 
 - 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
 
-📂 [Détails sur ma MediaHub](applications/jellyfin.md)
+📂 [Détails sur mon MediaHub](applications/jellyfin.md)
 
 ### 📊 Logiciel de qualimétrie : SonarQube  
 - 📌 **Objectif** : Auto-héberger mon logiciel de qualimétrie
