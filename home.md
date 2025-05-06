@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2025-05-06T18:26:05.786Z
+date: 2025-05-06T18:27:14.588Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -54,13 +54,13 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 
 📂 [Détails sur mon Site Web](applications/wordpress.md)
 
-### 🎬 MediaHub : Jellyfin
+### 🎬 MediaHub : Jellyfin, Jellyseerr, Radarr, Solarr, Prowlarr
 - 📌 **Objectif** : Auto-héberger une bibliothèque multimédia  
 - ⚙ **Technos utilisées** : Jellyfin, Jellyseerr, Radarr, Solarr, Prowlarr,Flaresolverr, qBittorrent, Docker
 - 🖥 **Matériel** : Serveur dédié 
 - 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
 
-📂 [Détails sur mon MediaHub](applications/jellyfin.md)
+📂 [Détails sur mon MediaHub](applications/mediahub.md)
 
 ### 📊 Logiciel de qualimétrie : SonarQube  
 - 📌 **Objectif** : Auto-héberger mon logiciel de qualimétrie
