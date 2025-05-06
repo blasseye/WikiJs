@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2025-05-03T07:31:00.874Z
+date: 2025-05-06T18:26:05.786Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
@@ -68,7 +68,7 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 - 🖥 **Matériel** : Serveur dédié 
 - 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
 
-📂 [Détails sur mon Logiciel de qualimétrie](applications/sonarQube.md)
+📂 [Détails sur mon Logiciel de qualimétrie](applications/sonarqube.md)
 
 📂 [Tous mes projets](applications.md)
 
