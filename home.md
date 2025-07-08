@@ -1,20 +1,16 @@
 ---
-title: Home
-description: 
+title: Mon Wiki Personnel
+description: Bienvenue sur mon wiki ! Ici, je centralise mes connaissances, notes et ressources utiles.
 published: true
-date: 2025-05-06T18:27:14.588Z
+date: 2025-07-07T21:42:45.276Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
 ---
 
 <p align="center">
-  <img width="200" height="200" src="https://github.com/blasseye/WikiJs/blob/main/icon/logo.png" alt="Logo du Wiki" />
+  <img width="300" height="300" src="https://git.blasseye.fr/blasseye/assets/raw/branch/main/light/wiki/wiki.svg" alt="Logo du Wiki" />
 </p>
-
-# 🌐 Mon Wiki Personnel
-
-Bienvenue sur mon wiki ! Ici, je centralise mes connaissances, notes et ressources utiles.  
 
 ---
 
@@ -36,48 +32,55 @@ Ce wiki a pour but de documenter mes projets, expériences et bonnes pratiques.
 
 ---
 
-## 🔧 Applications auto-hebergées <a name="applications"></a>
+## 🔧 Service auto-hebergées
 
-### 📚 Wiki : WikiJs  
-- 📌 **Objectif** : Auto-héberger mon wiki
-- ⚙ **Technos utilisées** : 
-- 🖥 **Matériel** : Serveur dédié 
-- 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
+### Media Hub
 
-📂 [Détails sur mon Wiki](applications/wikijs.md)
+- 🎬 **Jellyfin** : Serveur de streaming
+- 🎟️ **Jellyseerr** : Système de requêtes utilisateurs
+- 📼 **Radarr** : Gestion de films
+- 📺 **Sonarr** : Gestion de séries
+- 🔍 **Prowlarr** : Agrégation d'indexeurs
+- ⬇️ **qBittorrent** : Client torrent intégré
 
-### 🚀 Site Web : Wordpress  
-- 📌 **Objectif** : Auto-héberger mon site web
-- ⚙ **Technos utilisées** :
-- 🖥 **Matériel** : Serveur dédié 
-- 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
+📂 [Détails sur mon MediaHub](mediahub.md)
 
-📂 [Détails sur mon Site Web](applications/wordpress.md)
+### Supervision
 
-### 🎬 MediaHub : Jellyfin, Jellyseerr, Radarr, Solarr, Prowlarr
-- 📌 **Objectif** : Auto-héberger une bibliothèque multimédia  
-- ⚙ **Technos utilisées** : Jellyfin, Jellyseerr, Radarr, Solarr, Prowlarr,Flaresolverr, qBittorrent, Docker
-- 🖥 **Matériel** : Serveur dédié 
-- 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
+- 📊 **Zabbix** : Monitoring d'infrastructure
+- 📈 **Grafana** : Dashboards et métriques
+- ⚙️ **Portainer** : Gestion visuelle des conteneurs
+- 🔔 **What's Up Docker (WUD)** : Suivi des updates
 
-📂 [Détails sur mon MediaHub](applications/mediahub.md)
+📂 [Détails sur ma Supervision](supervision.md)
 
-### 📊 Logiciel de qualimétrie : SonarQube  
-- 📌 **Objectif** : Auto-héberger mon logiciel de qualimétrie
-- ⚙ **Technos utilisées** : 
-- 🖥 **Matériel** : Serveur dédié 
-- 🔗 **Accès sécurisé** via VPN et authentification (WireGuard)
+### Outils DevOps
 
-📂 [Détails sur mon Logiciel de qualimétrie](applications/sonarqube.md)
+- 🔧 **ForgeJo** : Git self-hosted
+- 🔁 **Woodpecker CI** : Intégration continue
+- 🧪 **SonarQube** : Analyse de qualité de code
 
-📂 [Tous mes projets](applications.md)
+📂 [Détails sur mes Outils DevOps](outils-devops.md)
 
----
+### Applications
 
-## 📝 Notes diverses <a name="notes-diverses"></a>
+- ✍️ **Ghost** : Blog personnel
+- 🌍 **WordPress** : Site familial
+- ☁️ **Nextcloud** : Cloud personnel
+- 📝 **OnlyOffice** : Éditeur de documents collaboratif
+- 📚 **Wiki.js** : Ce wiki
+- 🏠 **Home Assistant** : Automatisation domotique
+- 🧠 **AFFiNe** : Notes, tâches et mindmaps
 
-Des astuces, configurations et documentations annexes.
+📂 [Détails sur mes Applications](applications.md)
 
-📂 [Voir toutes mes notes](notes.md)
+### Sécurité
+
+- 🔐 **WG-Easy** : Gestion simplifiée de WireGuard VPN via interface web  
+- 🛡️ **Authentil** : Plateforme d'authentification et SSO  
+- 🦙 **CrowdSec** : Détection d'intrusions et sécurité proactive  
+- 🚫 **Fail2Ban** : Protection contre les tentatives de connexion malveillantes
+
+📂 [Détails sur mes services lié a la sécurité de mon infrastructure](securite.md)
 
 ---

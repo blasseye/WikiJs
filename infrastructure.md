@@ -1,17 +1,11 @@
 ---
 title: Infrastructure
-description: 
+description: Bienvenue dans la section dédiée à mon infrastructure. Cette page décrit les composants principaux que j’utilise pour héberger et gérer mes services.
 published: true
-date: 2025-05-02T21:02:51.140Z
+date: 2025-06-30T15:54:01.461Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T21:02:01.512Z
----
-
-# 🏗 Infrastructure
-
-Bienvenue dans la section dédiée à mon infrastructure. Cette page décrit les composants principaux que j’utilise pour héberger et gérer mes services.
-
 ---
 
 ## ☁️ Cloud : OpenStack
