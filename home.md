@@ -1,8 +1,8 @@
 ---
-title: Mon Wiki Personnel
-description: Bienvenue sur mon wiki ! Ici, je centralise mes connaissances, notes et ressources utiles.
+title: Ma Tanière Numérique - Wiki du cloud open-source et du self-hosting
+description: Bienvenue dans ma Tanière Numérique, un wiki dédié à l’exploration, à la documentation et au partage de connaissances autour des infrastructures cloud auto-hébergées, des services open-source et de la souveraineté numérique.
 published: true
-date: 2025-07-07T21:42:45.276Z
+date: 2025-07-23T08:57:54.427Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-02T20:54:00.983Z
